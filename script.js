@@ -36,11 +36,11 @@ const renderData = (time) => {
       button.classList.remove("active");
     }
   });
-  //document.getElementById("daily_button").classList.add("active");
+  console.log(itemBlock);
   //render data
   itemBlock.forEach((item, index) => {
     //current hour
-    item.childNodes[1].childNodes[3].innerText = `${fetchedData[index].timeframes[time].current}hrs`;
+    item.childNodes[1].childNodes[3].childNodes[1].innerText = `${fetchedData[index].timeframes[time].current}hrs`;
 
     //previous hour
     let timePeriod = "";
@@ -49,9 +49,10 @@ const renderData = (time) => {
     if (time === "monthly") timePeriod = "Last month";
 
     //.previous__hour/time_period
-    item.childNodes[1].childNodes[5].childNodes[0].innerText = timePeriod;
+    item.childNodes[1].childNodes[3].childNodes[3].childNodes[0].innerText =
+      timePeriod;
 
     //.previous__hour/hour
-    item.childNodes[1].childNodes[5].childNodes[2].innerText = `${fetchedData[index].timeframes[time].previous}hrs`;
+    item.childNodes[1].childNodes[3].childNodes[3].childNodes[2].innerText = `${fetchedData[index].timeframes[time].previous}hrs`;
   });
 };
