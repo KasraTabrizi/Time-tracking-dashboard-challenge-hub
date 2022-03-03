@@ -229,19 +229,9 @@ body {
   font-weight: var(--font-weight-300);
 }
 
-/* FOOTER */
-.attribution {
-  font-size: 11px;
-  text-align: center;
-}
-
-.attribution a {
-  color: hsl(228, 45%, 44%);
-}
-
 /* RESPONSIVENESS SECTION */
 
-/* TABLET */
+/* TABLET EN DESKTOP SMALL SCREENS */
 @media only screen and (min-width: 768px) {
   body {
     overflow: hidden;
@@ -304,7 +294,7 @@ body {
   }
 }
 
-/* DESKTOP */
+/* DESKTOP LARGE SCREENS */
 @media only screen and (min-width: 120em) {
   /* MAIN */
   .grid__container {

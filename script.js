@@ -25,9 +25,7 @@ fetch("data.json")
     renderData("weekly");
   });
 
-const renderData = (time) => {
-  //add active class for highlight click
-
+const selectButton = (time) => {
   const timeButton = document.querySelectorAll("[data-name]");
   timeButton.forEach((button) => {
     if (button.dataset.name === time) {
@@ -36,7 +34,12 @@ const renderData = (time) => {
       button.classList.remove("active");
     }
   });
-  console.log(itemBlock);
+};
+
+const renderData = (time) => {
+  //add active class for highlight click
+  selectButton(time);
+
   //render data
   itemBlock.forEach((item, index) => {
     //current hour
