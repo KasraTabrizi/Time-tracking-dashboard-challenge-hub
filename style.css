@@ -46,6 +46,7 @@ html {
   font-size: var(--font-size-base);
   font-family: "Rubik", sans-serif;
   background-color: var(--color-neutral-very-dark-blue);
+  user-select: none;
 }
 
 body {
@@ -127,7 +128,7 @@ body {
   align-items: flex-start;
 }
 
-.action__container div {
+.button {
   cursor: pointer;
   width: auto;
   color: var(--color-neutral-pale-blue);
@@ -136,7 +137,12 @@ body {
   transition: color 0.2s ease-in-out;
 }
 
-.action__container div:hover {
+.button:hover {
+  color: white;
+  opacity: 1;
+}
+
+.active {
   color: white;
   opacity: 1;
 }

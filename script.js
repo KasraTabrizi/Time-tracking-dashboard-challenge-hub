@@ -26,6 +26,18 @@ fetch("data.json")
   });
 
 const renderData = (time) => {
+  //add active class for highlight click
+
+  const timeButton = document.querySelectorAll("[data-name]");
+  timeButton.forEach((button) => {
+    if (button.dataset.name === time) {
+      button.classList.add("active");
+    } else {
+      button.classList.remove("active");
+    }
+  });
+  //document.getElementById("daily_button").classList.add("active");
+  //render data
   itemBlock.forEach((item, index) => {
     //current hour
     item.childNodes[1].childNodes[3].innerText = `${fetchedData[index].timeframes[time].current}hrs`;
