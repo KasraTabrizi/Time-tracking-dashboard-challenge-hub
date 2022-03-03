@@ -19,7 +19,11 @@ fetch("data.json")
   .then((data) => {
     fetchedData = data;
   })
-  .then(() => console.log(fetchedData));
+  .then(() => {
+    console.log(fetchedData);
+    //render weekly data after page loads
+    renderData("weekly");
+  });
 
 const renderData = (time) => {
   itemBlock.forEach((item, index) => {
