@@ -221,12 +221,14 @@ body {
   font-size: 2em;
   color: white;
   font-weight: var(--font-weight-300);
+  transition: all 0.5s ease-in-out;
 }
 
 .previous__hour {
   font-size: 0.9em;
   color: var(--color-neutral-pale-blue);
   font-weight: var(--font-weight-300);
+  transition: all 0.5s ease-in-out;
 }
 
 /* RESPONSIVENESS SECTION */
