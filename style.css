@@ -56,6 +56,7 @@ body {
   width: 100vw;
 }
 
+/* MAIN */
 .grid__container {
   width: 80vw;
   height: 70vh;
@@ -76,6 +77,18 @@ body {
   grid-row-end: span 2;
 }
 
+/* FOOTER */
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+/* RESPONSIVENESS SECTION */
+
 /* MOBILE */
 @media only screen and (min-width: 375px) {
 }
@@ -86,14 +99,4 @@ body {
 
 /* DESKTOP */
 @media only screen and (min-width: 1440px) {
-}
-
-/* FOOTER */
-.attribution {
-  font-size: 11px;
-  text-align: center;
-}
-
-.attribution a {
-  color: hsl(228, 45%, 44%);
 }
