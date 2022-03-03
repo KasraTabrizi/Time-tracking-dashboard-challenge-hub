@@ -69,7 +69,6 @@ body {
 
 .main_item,
 .item {
-  border: 1px solid black;
   border-radius: 15px;
 }
 
@@ -87,8 +86,59 @@ body {
   align-items: flex-end;
 }
 
+.main_item {
+  background-color: var(--color-neutral-dark-blue);
+}
+
+.profile__section {
+  background-color: var(--color-primary-blue);
+  color: white;
+  padding: 1.2em;
+  border-radius: 15px;
+  height: 70%;
+}
+
+.profile__section img {
+  width: 35%;
+  border-radius: 50%;
+  border: 3px solid white;
+  display: block;
+}
+
+.profile__section span {
+  display: block;
+  margin-top: 4em;
+  color: var(--color-neutral-pale-blue);
+  font-size: 0.8rem;
+}
+
+.profile__section h1 {
+  color: white;
+  font-size: 2.5rem;
+  font-weight: var(--font-weight-300);
+}
+
+.action__container {
+  height: 30%;
+  padding: 1.2em;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
 .action__container div {
   cursor: pointer;
+  width: auto;
+  color: var(--color-neutral-pale-blue);
+  opacity: 0.5;
+  font-weight: var(--font-weight-300);
+  transition: color 0.2s ease-in-out;
+}
+
+.action__container div:hover {
+  color: white;
+  opacity: 1;
 }
 
 [data-target="work"] {
