@@ -28,7 +28,7 @@ Users should be able to:
 
 ### Links
 
-- Live Site URL: [https://kasratabrizi.github.io/Time-tracking-dashboard-challenge-hub/](Live Github Page)
+- Live Site URL: [Github Page](https://kasratabrizi.github.io/Time-tracking-dashboard-challenge-hub/)
 
 ## My process
 
