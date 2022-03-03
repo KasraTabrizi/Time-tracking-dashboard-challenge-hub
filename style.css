@@ -1,0 +1,70 @@
+/* CSS BASIC RESET */
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  margin: 0;
+  padding: 0;
+}
+
+/* DEFINE VARIABLES */
+:root {
+  /* PRIMARY */
+  --color-primary-blue: hsl(246, 80%, 60%);
+  --color-primary-light-red-work: hsl(15, 100%, 70%);
+  --color-primary-soft-blue-play: hsl(195, 74%, 62%);
+
+  --color-primary-light-red-study: hsl(348, 100%, 68%);
+  --color-primary-lime-green-exer: hsl(145, 58%, 55%);
+  --color-primary-voilet-social: hsl(264, 64%, 52%);
+  --color-primary-soft-orange-care: hsl(43, 84%, 65%);
+
+  /* NEUTRAL */
+  --color-neutral-very-dark-blue: hsl(226, 43%, 10%);
+  --color-neutral-dark-blue: hsl(235, 46%, 20%);
+  --color-neutral-desat-blue: hsl(235, 45%, 61%);
+  --color-neutral-pale-blue: hsl(236, 100%, 87%);
+
+  /* TYPOGRAPHY */
+  /* (card titles e.g. Work, Play) */
+  --font-size-base: 18px;
+  --font-weight-300: 300;
+  --font-weight-400: 400;
+  --font-weight-500: 500;
+}
+
+html {
+  font-size: var(--font-size-base);
+  font-family: "Kumbh Sans", sans-serif;
+  background-color: var(--color-primary-dark-cyan);
+}
+
+/* MOBILE */
+@media only screen and (min-width: 375px) {
+}
+
+/* TABLET */
+@media only screen and (min-width: 768px) {
+}
+
+/* DESKTOP */
+@media only screen and (min-width: 1440px) {
+}
+
+/* FOOTER */
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
