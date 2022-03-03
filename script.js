@@ -28,8 +28,7 @@ fetch("data.json")
 const renderData = (time) => {
   itemBlock.forEach((item, index) => {
     //current hour
-    item.childNodes[1].childNodes[3].innerText =
-      fetchedData[index].timeframes[time].current;
+    item.childNodes[1].childNodes[3].innerText = `${fetchedData[index].timeframes[time].current}hrs`;
 
     //previous hour
     let timePeriod = "";
@@ -41,7 +40,6 @@ const renderData = (time) => {
     item.childNodes[1].childNodes[5].childNodes[0].innerText = timePeriod;
 
     //.previous__hour/hour
-    item.childNodes[1].childNodes[5].childNodes[2].innerText =
-      fetchedData[index].timeframes[time].previous;
+    item.childNodes[1].childNodes[5].childNodes[2].innerText = `${fetchedData[index].timeframes[time].previous}hrs`;
   });
 };
