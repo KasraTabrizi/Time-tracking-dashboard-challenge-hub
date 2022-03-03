@@ -297,6 +297,18 @@ body {
 }
 
 /* DESKTOP LARGE SCREENS */
+@media only screen and (min-width: 1440px) {
+  /* MAIN */
+  .grid__container {
+    width: 80vw;
+    height: 40vh;
+  }
+  .info__container {
+    height: 80%;
+  }
+}
+
+/* DESKTOP LARGE SCREENS */
 @media only screen and (min-width: 120em) {
   /* MAIN */
   .grid__container {
